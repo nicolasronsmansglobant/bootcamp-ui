@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Sign up task</title>
+	
+		<script type="text/javascript">
+
+		function validate(){
+
+		var fname=document.getElementById('fname').value;
+		var lname=document.getElementById('lname').value;
+		var email=document.getElementById('email').value;
+		var birthday=document.getElementById('birthday').value;
+
+		if (fname =="") {
+			alert("Please, write your first name");
+			return false;
+		};
+		if  (lname ==""){
+			alert("Please, make sure you wrote your last name!")
+			return false;
+		};
+		if  (email ==""){
+			alert("Please, write your email")
+			return false;
+		};
+		if  (birthday ==""){
+			alert("Make sure you wrote your date of birth!")
+			return false;
+		};
+
+		}
+		</script>
+	</head>
+	<body>
+		<div class="style_box">
+		<form method="post">
+			<table>
+				<tr>
+					<td>First name</td>
+					<td><input type="text" name="first name" id="fname"></td>
+				</tr>
+				<tr>
+					<td>Last name</td>
+					<td><input type="text" name="last name" id="lname"></td>
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td>Date of birth</td>
+					<td><input type="text" name="birthday" id="birthday"></td>
+				</tr>
+				<tr>
+					<td>
+						<label for="fs">Favourite sport</label> <br/>
+					</td>
+					<td>
+						<select id="fs" name="fs">
+  							<option value="" selected="selected">- select -</option>
+ 							<option value="football">Football</option>
+ 							<option value="voleyball">Voleyball</option>
+							<option value="baseball">Baseball</option>
+  							<option value="tennis">Tennis</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<textarea name="bio" rows="5" cols="40">Write here a brief description of yourself</textarea>
+				</th>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit button" value="Submit" onclick="validate()"></td>
+					<td><input type="reset" name="reset button" value="Clear all"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
