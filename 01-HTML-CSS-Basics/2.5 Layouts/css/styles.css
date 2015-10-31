@@ -1,0 +1,44 @@
+body {
+	margin: 0; 
+	padding: 0;
+}
+
+h2 {
+	font-size: 30px; 
+	font-family: Helvetica;
+	text-align: center;
+}
+
+.image {
+	float: left;
+	padding: 10px;
+}
+
+span.roll {
+	background: #778899;
+	font-size: 50px;
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+
+} 
+span.roll:hover {
+	color: #FFFFFF;
+	opacity: 0.5;
+}
+
+img {
+	height: 300px;
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
